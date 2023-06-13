@@ -1,3 +1,4 @@
-
 #!/bin/bash
-echo $((BREATH**$LOVE))
+
+result=$(echo "scale=0; $BREATH^$LOVE" | bc)
+echo $result
